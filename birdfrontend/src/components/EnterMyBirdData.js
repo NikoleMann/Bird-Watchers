@@ -18,7 +18,7 @@ function EnterMyBirdData() {
     event.preventDefault()
     const newBirdEntry = {bird_species,location,date}
     console.log(newBirdEntry)
-    fetch("http://localhost:8080/mybirds/add",{
+    fetch('http://localhost:8080/mybirds/add',{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify(newBirdEntry)
